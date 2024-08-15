@@ -9,4 +9,8 @@ export default defineConfig({
     environment: 'jsdom',
     setupFiles: './src/test/setup.js',
   },
+  root: '.', // Adjust if your index.html is in a different directory
+  build: {
+    outDir: '../dist',
+  },
 })
